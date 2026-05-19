@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* || RESET || */
+
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#kate-diary-el {
+    display: none;
+}
+
+
+
+/* || VARIABLE || */
+
+
+
+:root {
+    --BIG-MARGIN-BOTTOM: 1rem;
+    --SMALL-MARGIN-BOTTOM: .5rem;
+}
+
+
+
+/* || BASIC || */
+
+
+
+body {
+    background-color: #ffffff;
+    display: flex;
+    font-family: "Mali";
+    font-size: 1rem;
+    justify-content: center;
+    min-width: 320px;
+    padding: 1.5rem;
+}
+
+article {
+    max-width: 390px;
+}
+
+section {
+    margin-bottom: var(--BIG-MARGIN-BOTTOM);
+}
+
+nav {
+    border-bottom: .1rem solid black;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--SMALL-MARGIN-BOTTOM);
+    padding-bottom: var(--SMALL-MARGIN-BOTTOM);
+}
+
+h1 {
+    display: inline;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: var(--SMALL-MARGIN-BOTTOM);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: var(--SMALL-MARGIN-BOTTOM);
+    text-decoration: underline;
+    text-decoration-thickness: .05rem;
+    text-underline-offset: 7px;
+}
+
+a:any-link {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+ul {
+    margin-bottom: var(--BIG-MARGIN-BOTTOM);
+}
+
+li {
+    margin-bottom: var(--SMALL-MARGIN-BOTTOM);
+}
+
+img {
+    display: block;
+    margin-bottom: var(--BIG-MARGIN-BOTTOM);
+}
+
+
+
+/* || CLASSES || */
+
+
+
+.header {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    flex-direction: row;
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+}
+
+
+
+/* || MODIFIER || */
+
+
+
+.header--decoration {
+    justify-content: space-between;
+}
+
+.img--header--footer {
+    height: auto;
+    margin-bottom: 0;
+    width: 2.5rem;
+}
+
+.img--decoration {
+    height: auto;
+    width: 100%;
+}
+
+.img--header--decoration {
+    height: 2.5rem;
+    margin-bottom: 0;
+    width: auto;
+}
+
+.img--hidden {
+    display: none;
+}
+
+.no-bullet--li {
+    list-style: none;
+}
+
+.bullet--li {
+    list-style-type: circle;
+    margin-left: 1.5rem;
+}
+
+@media screen and (min-width: 820px) {
+
+    #kate-diary-el {
+        display: block !important;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #mema-diary-el {
+        border-right: .1rem solid black;
+        margin-right: 1.5rem;
+        padding-right: 1.5rem;
+    }
+
+    .img--hidden {
+        display: block;
+    }
+
+    .footer {
+        display: none;
+    }
+}

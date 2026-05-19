@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>อิอิ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <article id="mema-diary-el">
+            <section>
+                <div class="header">
+                    <h1>Mema's diary</h1>
+                    <img class="img--header--footer" src="img/Mema.png" alt="mema" width="200" height="200">
+                    <img class="img--hidden img--header--footer" src="img/cat.png" alt="cat" width="200" height="200">
+                </div>
+                <nav>
+                    <a href="#facts-section1">daily</a>
+                    <a href="#stories-section1">weekly</a>
+                </nav>
+                <div class="header header--decoration">
+                    <img class="img--header--decoration" src="img/Water.png" alt="water" width="200" height="200">
+                    <p>drink water</p>
+                </div>
+            </section>
+            <section id="facts-section1">
+                <img class="img--decoration" src="img/Meal.png" alt="meal" width="200" height="200">
+                <ul class="bullet--li" id="m-fact-el"></ul>
+            </section>
+            <section id="stories-section1">
+                <img class="img--decoration" src="img/People.png" alt="people"  width="200" height="200">
+                <ul class="no-bullet--li" id="m-story-el"></ul>
+            </section>
+            <section class="footer">
+                <a onclick="toKate()">
+                    <img class="img--header--footer" src="img/dog.png" alt="dog" width="200" height="200">
+                </a>
+            </section>
+        </article>
+        <article id="kate-diary-el">
+            <section>
+                <div class="header">
+                    <h1>Kate's diary</h1>
+                    <img class="img--header--footer" src="img/Kate.png" alt="kate" width="200" height="200">
+                    <img class="img--hidden img--header--footer" src="img/dog.png" alt="dog" width="200" height="200">
+                </div>
+                <nav>
+                    <a href="#facts-section2">daily</a>
+                    <a href="#stories-section2">weekly</a>
+                </nav>
+                <div class="header header--decoration">
+                    <img class="img--header--decoration" src="img/Water.png" alt="water" width="200" height="200">
+                    <p>drink water</p>
+                </div>
+            </section>
+            <section id="facts-section2">
+                <img class="img--decoration" src="img/Routine.png" alt="routine" width="200" height="200">
+                <ul class="bullet--li" id="k-fact-el"></ul>
+            </section>
+            <section id="stories-section2">
+                <img class="img--decoration" src="img/Song.png" alt="song"  width="200" height="200">
+                <ul class="no-bullet--li" id="k-story-el"></ul>
+            </section>
+            <section class="footer">
+                <a onclick="toMema()">
+                    <img class="img--header--footer" src="img/cat.png" alt="cat" width="200" height="200">
+                </a>
+            </section>
+        </article>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
